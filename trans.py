@@ -44,6 +44,8 @@ async def drug(usernam):
     await client.say('Ok,Starting the process for {}'.format(usernam))
     if usernam == 'sourovafrin':
         while True:
+            await asyncio.sleep(1)
+            SR=os.environ.get('SR')
             stm = Steem(node="https://api.steemit.com", keys=[SR])
             heist = 'dw-heist'
             heist_json = {"username": "sourovafrin", "amount": 30000}
@@ -57,6 +59,8 @@ async def drug(usernam):
             await asyncio.sleep(18000)
     elif usernam == 'svirus':
         while True:
+            SV=os.environ.get('SV')
+            await asyncio.sleep(1)
             stmm = Steem(node="https://api.steemit.com", keys=[SV])
             heist = 'dw-heist'
             heist_json = {"username": "svirus", "amount": 27000}
@@ -70,6 +74,8 @@ async def drug(usernam):
             await asyncio.sleep(18000)
     elif usernam == 'eftikhan':
         while True:
+            EF=os.environ.get('EF')
+            await asyncio.sleep(1)
             stmm = Steem(node="https://api.steemit.com", keys=[EF])
             heist = 'dw-heist'
             heist_json = {"username": "eftikhan", "amount": 27000}
